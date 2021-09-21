@@ -1,0 +1,192 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* HEADER */
+
+header .mauve {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+header .mauve img {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    filter: brightness(200%);
+}
+
+header form label {
+    color: lightgray;
+}
+
+header form input {
+    border-radius: 5px;
+    padding: 8px;
+}
+
+header form button {
+    background-color: lime;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+/* nav */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+header .logo-nav,
+header .coworking {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .nav {
+    flex: 4;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 30px 15px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav li a,
+header .coworking a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    max-width: max-content;
+    padding-bottom: 3px;
+}
+
+header a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    background-color: black;
+    height: 10%;
+    transition: 1s;
+}
+
+header a:hover::before {
+    width: 100%;
+}
+
+/* SECTION */
+section {
+    margin: 50px 15%;
+    /*TOP,BOTTOM - LEFT,RIGHT*/
+}
+
+.molengeek h1 {
+    font-size: 50px;
+    margin: auto;
+    /* Ce qui suit est pour le before */
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    position: relative;
+    padding-bottom: 30px;
+    max-width: max-content;
+}
+
+.molengeek h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3%;
+    width: 25%;
+    background-color: purple;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.molengeek ul li {
+    margin: 10px 0;
+}
+
+.molengeek ul li::marker {
+    color: purple;
+}
+
+.tech h2 {
+    font-size: 35px;
+    font-weight: normal;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(61, 60, 60);
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer .reseaux ul {
+    display: flex;
+}
+
+footer .reseaux ul li {
+    list-style: none;
+    padding: 50px 0;
+    margin-right: 35px;
+}
+
+footer .reseaux a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+}
+
+footer .reseaux i {
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 10px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+
+}
+
+footer .copy {
+    text-align: center;
+}
+
+footer p {
+    padding: 30px;
+    font-size: 10px;
+    color: gray;
+}
